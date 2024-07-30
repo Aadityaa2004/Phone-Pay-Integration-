@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { Pay, checkPaymentStatus } from "./lib/pay";
+import { Pay, checkPaymentStatus } from "./lib/utils/pay";
 
 export default function Home() {
   return (

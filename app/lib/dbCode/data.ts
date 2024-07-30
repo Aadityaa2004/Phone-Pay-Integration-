@@ -1,10 +1,10 @@
 import { revalidatePath } from "next/cache"
-import { GetSession, IsAdmin } from "./auth/auth"
+import { GetSession, IsAdmin } from "../auth/auth"
 import clientPromise from "./db"
 import { redirect } from "next/navigation"
 import { ObjectId } from "mongodb"
 import { DeleteS3 } from "./s3"
-import { checkPaymentStatus } from "./pay"
+import { checkPaymentStatus } from "../utils/pay"
 
 export async function clidb(name: string) {
     const cl = await clientPromise
